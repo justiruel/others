@@ -1,6 +1,6 @@
 ## start new process
-1. go to /snaap-api-feathers
-2 run :
+ - go to /snaap-api-feathers
+ - run :
 
 ```
 pm2 start src --name "snaapp-api-feathers" // ini seperti nodemon src
