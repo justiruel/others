@@ -23,3 +23,8 @@ pm2 restart snaapp-api-feathers
 pm2 stop snaapp-api-feathers
 ```
 
+## log process
+
+```
+pm2 logs 0 --lines 1000
+```
