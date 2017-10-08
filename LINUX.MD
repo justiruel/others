@@ -1,4 +1,4 @@
-#CHMOD
+## CHMOD
 
 chmod a-w file (removes all writing permissions)
 chmod o+x file (sets execute permissions for other (public permissions))
