@@ -28,3 +28,9 @@ pm2 stop snaapp-api-feathers
 ```
 pm2 logs 0 --lines 1000
 ```
+
+## list
+
+```
+pm2 list
+```
