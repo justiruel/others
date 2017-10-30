@@ -17,6 +17,9 @@
 - w = write access
 - x = execute (run) access 
 
+## service
+### enable mongodb
+- service mongod start
 ## systemctl
 ### enable mongodb as service 
 - systemctl enable mongod.service
