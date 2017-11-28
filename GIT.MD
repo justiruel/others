@@ -84,3 +84,7 @@ beda pull dan fetch : http://ngoprek.rahmad.my.id/2012/02/belajar-git-dasar-dasa
 git stash save --keep-index --include-untracked   --> menyimpan uncommitted
 git stash apply --> mengembalikan uncommitted 
 ```
+
+
+
+<i>NB: data dalam git kalau dihapus lalu di-commit tidak akan bener-benar dihapus</i>
