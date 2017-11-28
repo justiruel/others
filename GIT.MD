@@ -4,38 +4,53 @@
 
 ## Perintah dasar
 
+### Membuat git baru
 ```
-git remote -v  --> show remote url
+git init
 ```
-```
-git clone https://github.com/justiruel/sql_server_learn.git 
-```
-```
-git add * --> add all edited data
-```
-```
-git commit -m "komentar" --> commit all data which has been added
-```
-```
-git push origin tafsirul --> push to server
-```
-```
-git status --> show file which not committed
-```
-```
-git log --graph --oneline --all --> show committed file
-```
-```
-git checkout devel --> switch to branch devel
-```
-```
-git checkout -b tafsirul --> switch to and create branch tafsirul
-```
+### set config
 ```
 git config user.name tafsirul
 git config user.email tafsirul@gmail.com
 ```
+### show remote url
+```
+git remote -v  
+```
+### Clone
+```
+git clone https://github.com/justiruel/sql_server_learn.git 
+```
+### Add all edited data
+```
+git add *
+```
+### commit all data which has been added
+```
+git commit -m "komentar" 
+```
+###  Push to server
+```
+git push origin tafsirul
+```
+###  Show file which not committed
+```
+git status
+```
 
+### show committed/merged/rebased/pull file
+```
+git log --graph --oneline --all
+```
+###  Switch to branch devel
+```
+git checkout devel
+```
+### switch to and create branch tafsirul
+```
+git checkout -b tafsirul
+```
+### Add origin
 ```
 git remote add origin https://github.com/justiruel/sql_server_learn.git
 git remote remove origin
@@ -58,13 +73,13 @@ git add *
 git rebase --continue
 ```
 
+### Pull
 ```
 git pull origin master --> update semua data di origin/server kedalam active local branch
 beda pull dan fetch : http://ngoprek.rahmad.my.id/2012/02/belajar-git-dasar-dasar-pengelolaan.html
 ```
 
-## stash
-
+### stash
 ```
 git stash save --keep-index --include-untracked   --> menyimpan uncommitted
 git stash apply --> mengembalikan uncommitted 
