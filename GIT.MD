@@ -100,11 +100,21 @@ ref : https://www.petanikode.com/git-diff/
 ```
 git diff myfile.txt
 ```
-
 ### or if you want to see already-added changes
 ```
 git diff --cached myfile.txt
 ```
+catatan : untuk keluar dari view file tekan "q"
+
+
+## Mencari tahu siapa yang melakukan commit, dan pada jam berapa
+```
+git blame index.html
+```
+
+# pull request
+????
+
 
 ## 
 
