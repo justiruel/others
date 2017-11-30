@@ -87,6 +87,14 @@ git stash save --keep-index --include-untracked   --> menyimpan uncommitted
 git stash apply --> mengembalikan uncommitted 
 ```
 
+## Melihat perubahan pada revisi tertentu
+
+```
+git diff cf08ca0837cf26f1c595be36bb3a6b815e311be1
+git diff index.html
+```
+ref : https://www.petanikode.com/git-diff/
 
 
+<br/>
 <i>NB: data dalam git kalau dihapus lalu di-commit tidak akan bener-benar dihapus</i>
