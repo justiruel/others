@@ -95,6 +95,17 @@ git diff index.html
 ```
 ref : https://www.petanikode.com/git-diff/
 
+
+### If you want to see what you haven't git added yet:
+```
+git diff myfile.txt
+```
+
+### or if you want to see already-added changes
+```
+git diff --cached myfile.txt
+```
+
 ## 
 
 <br/>
