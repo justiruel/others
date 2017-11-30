@@ -90,7 +90,7 @@ git stash apply --> mengembalikan uncommitted
 ## Melihat perubahan pada revisi tertentu
 
 ```
-git diff cf08ca0837cf26f1c595be36bb3a6b815e311be1
+git diff cf08ca0837cf26f1c595be36bb3a6b815e311be1    -> ini adalah nomor revisi diambil dari "git log"
 git diff index.html
 ```
 ref : https://www.petanikode.com/git-diff/
