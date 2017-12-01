@@ -57,6 +57,7 @@ db.cobi.update(
 ```
 ### Definisi
 <table>
+  <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
   <tr><td>upsert</td><td>boolean</td><td>Optional. If set to true, creates a new document when no document matches the query criteria. The default value is false, which does not insert a new document when no match is found.</td></tr>
   <tr><td>multi 	boolean</td><td>boolean</td><td>Optional. If set to true, updates multiple documents that meet the query criteria. If set to false, updates one document. The default value is false. For additional information, see Multi Parameter.</td></tr>
 </table>
