@@ -61,3 +61,30 @@ db.cobi.update(
   <tr><td>upsert</td><td>boolean</td><td>Optional. If set to true, creates a new document when no document matches the query criteria. The default value is false, which does not insert a new document when no match is found.</td></tr>
   <tr><td>multi 	boolean</td><td>boolean</td><td>Optional. If set to true, updates multiple documents that meet the query criteria. If set to false, updates one document. The default value is false. For additional information, see Multi Parameter.</td></tr>
 </table>
+
+
+# Join 
+Lookup, Performs a left outer join to an unsharded collection in the same database to filter in documents from the “joined” collection for processing.
+
+```
+db.users.aggregate([
+	{
+      $unwind: "$schools"
+   },
+    {
+      $lookup:
+        {
+          from: "schools", //collection schools
+          localField: "schools.school_id",  //schools.school_id adalah field di collection users
+          foreignField: "_id",
+          as: "datague"
+        }
+   }
+])
+```
+penjelasan :
+```
+$unwind duplicates each document in the pipeline, once per array element.
+So if your input pipeline contains one article doc with two elements in tags, {$unwind: '$tags'} would transform the pipeline to be two article docs that are the same except for the tags field. In the first doc, tags would contain the first element from the original doc's array, and in the second doc, tags would contain the second element.
+```
+Menurutku sih intinya $unwind digunakan jika localField atau foreignField adalah berupa element array/object, contoh pada <i>schools.school_id</i>, <i>schools</i> adalah element array jadi agar <i>school_id</i> dapat diakses sebagai localField atau foreignField maka <i>schools</i> harus dimasukkan unwind
