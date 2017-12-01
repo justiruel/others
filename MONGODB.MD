@@ -1,3 +1,5 @@
+ref : https://docs.mongodb.com/manual/reference/method/db.collection.insert/
+
 ## check type data 
 ```
 db.user.find({"roles.parent.child_id":{$type:2}})
