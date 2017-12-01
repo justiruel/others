@@ -1,5 +1,17 @@
 ref : https://docs.mongodb.com/manual/reference/method/db.collection.insert/
 
+## MongoDB (NoSql Database)
+- adalah schemaless database, tidak mengenal istilah relation (one to many dll.)
+- di konsep NoSQL ini Anda bisa menyimpan data tanpa perlu mendefinisikan tipe data dan ukurannya.
+- sangat cocok untuk db blog,portal,dll.
+- tidak cocok untuk aplikasi yang butuh transaction rollback
+- ref : http://www.diskusiweb.com/discussion/41339/mengenal-mongodb-open-source-database-nosql-document-oriented
+
+## Istilah
+- Collection --> di sql seperti table
+- Document --> di sql seperti field tapi bedanya document bisa memiliki sub document
+- Document bisa memiliki banyak element dan sub document data yang bisa ditampung tiap document adalah  max 2MB
+
 ## check type data 
 ```
 db.user.find({"roles.parent.child_id":{$type:2}})
