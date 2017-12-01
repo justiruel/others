@@ -9,8 +9,8 @@ ref : https://docs.mongodb.com/manual/reference/method/db.collection.insert/
 
 ## Istilah
 - Collection --> di sql seperti table
-- Document --> di sql seperti field tapi bedanya document bisa memiliki sub document
-- Document bisa memiliki banyak element dan sub document data yang bisa ditampung tiap document adalah  max 2MB
+- Document --> di sql seperti record tapi bedanya document bisa memiliki sub document
+- Document bisa memiliki banyak element dan sub document, data yang bisa ditampung tiap document adalah  max 2MB
 
 ## check type data 
 ```
