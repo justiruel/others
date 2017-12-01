@@ -34,3 +34,7 @@ db.users.find({
 })
 ```
 
+## insert
+```
+db.cobi.insert( { item: "card", qty: 15 } )
+```
