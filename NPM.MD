@@ -17,7 +17,7 @@ npm --version
 
 ### eksekusi hasil npm install
 ```
-var _ = require(<library name>);<br/>
+var _ = require(<library name>);
 contoh :
 var _ = require('lodash');
 ```
