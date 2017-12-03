@@ -14,3 +14,10 @@ check version
 ```
 npm --version
 ```
+
+### eksekusi hasil npm install
+```
+var _ = require(<library name>);<br/>
+contoh :
+var _ = require('lodash');
+```
