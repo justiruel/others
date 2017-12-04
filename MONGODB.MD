@@ -1,4 +1,5 @@
 ref : https://docs.mongodb.com/manual/reference/method/db.collection.insert/
+- saat install mongodb di windows jika terjadi error : mkdir c:\data\db
 
 ## MongoDB (NoSql Database)
 - adalah schemaless database, tidak mengenal istilah relation (one to many dll.)
