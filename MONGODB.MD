@@ -52,6 +52,15 @@ db.users.find({
 ```
 db.cobi.insert( { item: "card", qty: 15 } )
 ```
+## insert many (batch insert)
+```
+   db.cobi.insertMany( [
+      { item: "card", qty: 15 },
+      { item: "envelope", qty: 20 },
+      { item: "stamps" , qty: 30 }
+   ] );
+
+```
 
 ## Delete
 ```
