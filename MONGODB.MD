@@ -53,6 +53,11 @@ db.users.find({
 db.cobi.insert( { item: "card", qty: 15 } )
 ```
 
+## Delete
+```
+db.cobi.remove( { item: "asoy" } )
+```
+
 ## Update
 ```
 db.cobi.update(
