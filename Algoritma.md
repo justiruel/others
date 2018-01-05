@@ -7,6 +7,3 @@
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;--- VALID   : masuk ke proses API
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;--- TOKEN EXPIRED : message("token was expired")
 <br/>-- token tidak eksis, message("invalid token")
-
-
-soap
