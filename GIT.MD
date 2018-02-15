@@ -61,8 +61,9 @@ git remote remove origin
 ### Merge
 ```
 git checkout master
-git merge devel
+git merge --no-ff devel
 ```
+--no-ff digunakan agar detail commit tetap tampil dan tidak menyatu
 
 ### Rebase
 Rebase memiliki fungsi yang sama dengan merge, bedanya operasi merge akan menghasilkan commit baru sementara rebase tidak, hasil log dari rebase akan terlihat lebih rapi (tidak ada percabangan)
