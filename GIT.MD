@@ -57,8 +57,15 @@ git checkout -b tafsirul
 git remote add origin https://github.com/justiruel/sql_server_learn.git
 git remote remove origin
 ```
-
-### Merge
+## Melihat semua branch di repository
+```
+git branch -a
+```
+## Pindah branch sekaligus tracking remote repository
+```
+ git checkout -b experimental origin/experimental
+```
+### Merge devel to master
 ```
 git checkout master
 git merge --no-ff devel
