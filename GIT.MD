@@ -118,12 +118,17 @@ git diff --cached myfile.txt
 ```
 catatan : untuk keluar dari view file tekan "q"
 
+### show detail committed file
+```
+git show 20e13fc09bc72ea283a628dc93eea88b220ebbac
+atau
+git show 20e13fc09bc72ea283a628dc93eea88b220ebbac --stat
+```
 
-## Mencari tahu siapa yang melakukan commit, dan pada jam berapa
+### Mencari tahu siapa yang melakukan commit, dan pada jam berapa
 ```
 git blame index.html
 ```
-
 # pull request
 ????
 
