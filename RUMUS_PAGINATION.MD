@@ -2,7 +2,7 @@ Inti dari pagination adalah menentukan limit dan offset suatu query select <br /
 ```
 select * from tableX limit [offset],[limit]
 select * from tableX limit 0,6 --> [jangan ditampilkan 0 record dari depan (berarti tampil semua)], [tampilkan 6 record setelahnya]
-[penjelasan alternatif : asumsikan record start dari 0, cara bacanya tampilkan record ke 0, tampilkan sebanyak 6 record]
+[penjelasan alternatif : asumsikan record start dari 0, cara bacanya, tampilkan record ke 0, tampilkan sebanyak 6 record]
 ```
 
 
