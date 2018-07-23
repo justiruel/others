@@ -9,9 +9,9 @@ ref : https://docs.mongodb.com/manual/reference/method/db.collection.insert/
 - buka cmd Run : mongod /service mongod start
 - buka NoSqlBooster masuk
 
-### Setting auth 
-- Buka cli run : mongod --dbpath /data/db (CLI 1)
-- buka cli lain, run : mongo (CLI 2)
+### Setting auth (https://stackoverflow.com/a/42929869) 
+- Buka cli run : mongod --dbpath /data/db <b>(CLI 1)</b>
+- buka cli lain, run : mongo <b>(CLI 2)</b>
 - run
 ```
 use some_db
