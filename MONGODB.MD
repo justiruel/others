@@ -1,5 +1,43 @@
 ref : https://docs.mongodb.com/manual/reference/method/db.collection.insert/
+
+## Cara install
 - saat install mongodb di windows jika terjadi error : mkdir c:\data\db
+- download : http://www.mongodb.com/
+- IDE NoSQLBooster : http://nosqlbooster.com/
+- install mongodb
+- daftarkan C:\Program Files\MongoDB\Server\3.4\bin ke path environment variable
+- buka cmd Run : mongod /service mongod start
+- buka NoSqlBooster masuk
+
+### Setting auth 
+- Buka cli run : mongod --dbpath /data/db (CLI 1)
+- buka cli lain, run : mongo (CLI 2)
+- run
+```
+use some_db
+```
+```
+db.createUser(
+  {
+    user: "myNormalUser",
+    pwd: "xyz123",
+    roles: [ { role: "readWrite", db: "some_db" },
+             { role: "read", db: "some_other_db" } ]
+  }
+)
+```
+- stop CLI yang me-run 'mongod --dbpath /data/db' (CLI 1)
+- jalankan : mongod --auth --dbpath /data/db (CLI 1)
+- Buka CLI 2, jalankan
+```
+use some_db
+```
+```
+db.auth("myNormalUser", "xyz123")
+db.foo.insert({x:1})
+use some_other_db
+db.foo.find({})
+```
 
 ## MongoDB (NoSql Database)
 - adalah schemaless database, tidak mengenal istilah relation (one to many dll.)
