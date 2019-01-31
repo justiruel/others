@@ -129,6 +129,12 @@ git show 20e13fc09bc72ea283a628dc93eea88b220ebbac --stat
 ```
 git blame index.html
 ```
+
+### Cherry Pick
+````
+https://stackoverflow.com/a/9339460
+````
+
 # pull request
 ????
 
